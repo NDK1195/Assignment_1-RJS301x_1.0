@@ -19,14 +19,14 @@ export default function Navbar() {
   }
 
   return (
-    <div className='bg-color-#003580 p-5'>
+    <nav className='bg-color-#003580 px-8 py-10'>
       <div className='text-white flex justify-between items-center mb-6'>
         <h1>Booking Website</h1>
         <div className='flex gap-4'>
-          <Button className='bg-white text-color-#003580 hover:bg-sky-400 hover:text-white'>
+          <Button className='bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white'>
             Register
           </Button>
-          <Button className='bg-white text-color-#003580 hover:bg-sky-400 hover:text-white'>
+          <Button className='bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white'>
             Login
           </Button>
         </div>
@@ -43,6 +43,6 @@ export default function Navbar() {
           ></NavBarItem>
         ))}
       </ul>
-    </div>
+    </nav>
   );
 }
