@@ -1,7 +1,7 @@
-import Button from '../../../utilities/Button';
-import NavBarItem from './NavBarItem';
-import navBarData from '../../../../data/navBar.json';
-import { useState } from 'react';
+import Button from "../../../utilities/Button";
+import NavBarItem from "./NavBarItem";
+import navBarData from "../../../../data/navBar.json";
+import { useState } from "react";
 
 export default function Navbar() {
   const [data, setData] = useState(navBarData);
@@ -19,19 +19,19 @@ export default function Navbar() {
   }
 
   return (
-    <nav className='bg-color-#003580 px-8 py-10'>
-      <div className='text-white flex justify-between items-center mb-6'>
+    <nav className="bg-color-#003580 px-8 py-10">
+      <div className="mb-6 flex items-center justify-between text-white">
         <h1>Booking Website</h1>
-        <div className='flex gap-4'>
-          <Button className='bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white'>
+        <div className="flex gap-4">
+          <Button className="bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white">
             Register
           </Button>
-          <Button className='bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white'>
+          <Button className="bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white">
             Login
           </Button>
         </div>
       </div>
-      <ul className='flex items-center gap-8'>
+      <ul className="flex flex-col items-start gap-8 sm:flex-row sm:items-center">
         {data.map((data, index) => (
           <NavBarItem
             key={index}
