@@ -1,11 +1,17 @@
-import Header from './components/Header';
-import Navbar from './components/Navbar';
+import CityList from "./components/CityList";
+import Header from "./components/Header";
+import Navbar from "./components/Navbar";
 
 const Home = () => {
   return (
     <>
-      <Navbar />
-      <Header />
+      <section className="bg-color-#003580">
+        <Navbar />
+        <Header />
+      </section>
+      <section>
+        <CityList />
+      </section>
     </>
   );
 };

@@ -19,7 +19,7 @@ export default function Navbar() {
   }
 
   return (
-    <nav className="bg-color-#003580 px-8 py-10">
+    <nav className="container mx-auto px-4 py-10 lg:px-0">
       <div className="mb-6 flex items-center justify-between text-white">
         <h1>Booking Website</h1>
         <div className="flex gap-4">
