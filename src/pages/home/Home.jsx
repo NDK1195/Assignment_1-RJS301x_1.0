@@ -1,16 +1,18 @@
-import CityList from "./components/CityList";
+import List from "./components/List";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
 
 const Home = () => {
   return (
     <>
-      <section className="bg-color-#003580">
+      <section className="mb-28 bg-color-#003580">
         <Navbar />
         <Header />
       </section>
       <section>
-        <CityList />
+        <List data="cities" />
+        <List data="types" />
+        <List data="hotels" />
       </section>
     </>
   );
