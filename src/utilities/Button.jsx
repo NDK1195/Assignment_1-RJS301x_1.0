@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
-export default function Button({ children, className }) {
+export default function Button({ children, className, type = "button" }) {
   return (
-    <button className={`py-2 px-4 transition ${className}`}>{children}</button>
+    <button type={type} className={`px-4 py-2 transition ${className}`}>
+      {children}
+    </button>
   );
 }

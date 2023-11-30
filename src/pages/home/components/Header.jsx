@@ -4,7 +4,7 @@ import Input from "../../../utilities/Input";
 export default function Header() {
   return (
     <header className="container relative mx-auto flex flex-col gap-6 px-4 py-10 text-white lg:px-0">
-      <h2 className="text-3xl font-bold">
+      <h2 className="text-4xl font-bold">
         A lifetime of discounts? It&apos;s Genius.
       </h2>
       <p>
@@ -15,7 +15,10 @@ export default function Header() {
         Sign in / Register
       </Button>
       <div className="absolute bottom-0 left-0 flex w-[calc(100%-32px)] translate-x-[16px] translate-y-1/2 flex-col gap-4 rounded-md border-2 border-amber-400 bg-white p-2 md:flex-row md:items-center md:justify-center lg:w-full lg:translate-x-0">
-        <form action="" className="flex flex-col items-center md:flex-row">
+        <form
+          action=""
+          className="flex flex-col gap-1 md:flex-row md:items-center"
+        >
           <Input placeholder="Where are you going?" icon="fa-bed" />
           <Input placeholder="11/11/2023 to 11/11/2023" icon="fa-calendar" />
           <Input
@@ -24,6 +27,7 @@ export default function Header() {
           />
         </form>
         <button
+          type="button"
           className="bg-[#0171c2] px-4 py-2 transition hover:bg-color-#003580"
           onClick={() => window.location.replace("/search")}
         >
