@@ -28,7 +28,7 @@ export default function List(props) {
       {props.data === "hotels" && (
         <h2 className="text-2xl font-bold">Homes guests love</h2>
       )}
-      <div className="mb-8 mt-10 flex flex-col items-center justify-between gap-4 md:flex-row">
+      <div className="mb-8 mt-10 flex flex-col justify-between gap-4 md:flex-row">
         {renderList}
       </div>
     </div>
