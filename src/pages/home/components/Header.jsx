@@ -3,7 +3,7 @@ import Input from "../../../utilities/Input";
 
 export default function Header() {
   return (
-    <header className="container relative mx-auto flex flex-col gap-6 px-4 py-10 text-white lg:px-0">
+    <div className="container relative mx-auto flex flex-col gap-6 px-4 py-10 text-white lg:px-0">
       <h2 className="text-4xl font-bold">
         A lifetime of discounts? It&apos;s Genius.
       </h2>
@@ -34,6 +34,6 @@ export default function Header() {
           Search
         </button>
       </div>
-    </header>
+    </div>
   );
 }
