@@ -8,6 +8,7 @@ import hotelList from "../../../../data/hotel_list.json";
 export default function List(props) {
   let renderList;
 
+  // Create render list based on data prop
   if (props.data === "cities") {
     renderList = cities.map((city) => <City key={city.name} {...city} />);
   } else if (props.data === "types") {

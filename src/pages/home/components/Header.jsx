@@ -19,11 +19,20 @@ export default function Header() {
           action=""
           className="flex flex-col gap-1 md:flex-row md:items-center"
         >
-          <Input placeholder="Where are you going?" icon="fa-bed" />
-          <Input placeholder="11/11/2023 to 11/11/2023" icon="fa-calendar" />
+          <Input
+            placeholder="Where are you going?"
+            icon="fa-bed"
+            className="lg:w-[200px]"
+          />
+          <Input
+            placeholder="11/11/2023 to 11/11/2023"
+            icon="fa-calendar"
+            className="lg:w-[200px]"
+          />
           <Input
             placeholder="2 adult &#183; 0 children &#183; 1 room"
             icon="fa-female"
+            className="lg:w-[200px]"
           />
         </form>
         <button

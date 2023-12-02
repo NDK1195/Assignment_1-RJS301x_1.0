@@ -1,11 +1,12 @@
-import Button from "../../../utilities/Button";
+import Button from "../utilities/Button";
 import NavBarItem from "./NavBarItem";
-import navBarData from "../../../../data/navBar.json";
+import navBarData from "../../data/navBar.json";
 import { useState } from "react";
 
 export default function Navbar() {
   const [data, setData] = useState(navBarData);
 
+  // Change active property based on index of item when mouse over item
   function handleChangeActiveStatus(index) {
     let updatedData = [...navBarData];
 
@@ -21,7 +22,9 @@ export default function Navbar() {
   return (
     <nav className="container mx-auto px-4 py-10 lg:px-0">
       <div className="mb-6 flex items-center justify-between text-white">
-        <h1>Booking Website</h1>
+        <a href="/">
+          <h1>Booking Website</h1>
+        </a>
         <div className="flex gap-4">
           <Button className="bg-white text-color-#003580 hover:bg-[#0171c2] hover:text-white">
             Register

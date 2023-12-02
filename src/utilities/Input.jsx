@@ -10,7 +10,7 @@ export default function Input({
       <input
         type={type}
         placeholder={placeholder}
-        className={`w-full px-1 py-2 text-sm focus:text-gray-900 focus:outline-none lg:w-[200px] ${className}`}
+        className={`w-full px-1 py-2 text-sm focus:text-gray-900 focus:outline-none ${className}`}
       />
     </div>
   );

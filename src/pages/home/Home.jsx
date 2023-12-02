@@ -1,8 +1,8 @@
 import List from "./components/List";
 import Header from "./components/Header";
-import Navbar from "./components/Navbar";
+import Navbar from "../../components/NavBar";
 import SignUp from "./components/SignUp";
-import Footer from "./components/Footer";
+import Footer from "../../components/Footer";
 
 const Home = () => {
   return (
