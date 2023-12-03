@@ -7,7 +7,6 @@ const Search = () => {
   return (
     <>
       <header className="mb-10 bg-color-#003580">
-        {" "}
         <Navbar />
       </header>
       <section className="container mx-auto mb-28 flex flex-col gap-4 px-2 lg:flex-row">

@@ -1,8 +1,8 @@
-import Button from "../../../utilities/Button";
-import Input from "../../../utilities/Input";
+import Button from "../utilities/Button";
+import Input from "../utilities/Input";
 export default function SignUp() {
   return (
-    <div className="flex flex-col items-center gap-6 px-2 py-16 text-white lg:px-0">
+    <div className="flex flex-col items-center gap-6 px-2 py-16 text-white lg:px-0 ">
       <h2 className="text-4xl font-bold">Save time, save money!</h2>
       <p>Sign up and we&apos;ll send the best deals to you</p>
       <form action="" className="flex w-[420px] flex-col gap-2 md:flex-row">
